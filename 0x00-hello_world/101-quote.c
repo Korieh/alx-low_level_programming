@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - prints to string
+ * main - print the string in the put function
  * Description: Prints "and that piece of art is useful.." without puts
+ * this program prints "Programming is like building a mulitlingual puzzle"
  * Return: 1
  */
 
