@@ -2,6 +2,7 @@
 
 /**
  * main - print the string in the put function
+ *
  * Description: Prints "and that piece of art is useful.." without puts
  * this program prints "Programming is like building a mulitlingual puzzle"
  * Return: 1
@@ -13,8 +14,7 @@ int main(void)
 	long l = 59;
 	long fd = 1;
 	long syscall = 1;
-	long ret = 0;
-	
+	long ret = 0;	
 	__asm__ ("syscall"
 			: "=a" (ret)
 			: "a" (syscall),
