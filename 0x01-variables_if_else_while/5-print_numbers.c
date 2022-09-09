@@ -6,7 +6,7 @@
  * Description: prints single digits of base 10 starting from 0
  * Return: 0
 */
-int main(void)
+	int main(void)
 {
 	
 	int s = 0;
