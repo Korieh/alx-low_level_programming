@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	unsigned long i = 0. j = 1, sum;
+	unsigned long i = 0, j = 1, sum;
 	float total;
 
 	while (1)
