@@ -4,7 +4,7 @@
 /**
  * mul - entry point
  * @a: character to check
- * @b; character to check
+ * @b: character to check
  * Description: multiply two integers
  * Return: 0
  */
