@@ -21,5 +21,5 @@ void print_diagonal(int n)
 		}
 	}
 	else
-		_putcar('\n');
+		_putchar('\n');
 }
