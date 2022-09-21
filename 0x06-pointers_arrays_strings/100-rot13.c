@@ -3,28 +3,29 @@
 
 /**
  * rot13 - encoder rot13
- * @s: pointer to srting params
+ * @a: pointer to srting params
  *
- * Return: *s
+ * Return: *a
  */
 
-char *rot13(char *s)
+char *rot13(char *a)
 {
-	int i;
 	int j;
-	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char daterot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	int i = 0;
+	char init[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char fin[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (*(a + i))
 	{
-		for (j = 0; j < 52; j++)
+		for (j = 0; j <= 52; j++)
 		{
-			if (s[i] == data1[j])
+			if (*(a + i) == init[j])
 			{
-				s[i] = datarot[j];
+				*(a + i) = fin[j];
 				break;
 			}
 		}
+		i++;
 	}
-	return (s);
+	return (a);
 }
