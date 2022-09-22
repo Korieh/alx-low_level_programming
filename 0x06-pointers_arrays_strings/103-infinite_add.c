@@ -28,11 +28,15 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	dec = c > 9 ? 1 : 0;
 	}
 	if (dec == 1)
-	{ r[n] = '1';
-	r[n + 1] = '\0'; }
+	{
+	r[n] = '1';
+	r[n + 1] = '\0';
+	}
 	else
-	{ r[n] = '\0';
-	n--; }
+	{
+	r[n] = '\0';
+	n--;
+	}
 	for (i = 0; i < n + 1; i++)
 	{
 	for (j = 0; j < (n - i); j++)
@@ -42,5 +46,5 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	r[j] = aux;
 	}
 	}
-  return (n < size_r - 1 ? r : 0);
+return (n < size_r - 1 ? r : 0);
 }
