@@ -6,8 +6,7 @@
  * @s: The string pointer to be searched.
  * @accept: The string pointer to be searched for.
  *
- * Return: A pointer to the matched byte if a set is matched.
- * 	   NULL if otherwise.
+ * Return: Always 0 (Success)
  */
 char *_strpbrk(char *s, char *accept)
 {
